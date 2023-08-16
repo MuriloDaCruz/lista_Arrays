@@ -1,0 +1,23 @@
+<script>
+    //Problema: Array em ordem decrescente
+    //Peça para um usuário inserir três números. Crie um array com os três números, colocand,os em ordem decrescente. Para ordenar, NÃO use o método reverse();
+    //Retorne os elementos do array, separand,os por hífen (n1, n2 - n3).
+
+    //ENTRADA
+    const numero = Number(prompt('Informe um número inteiro:'));
+    const numero2 = Number(prompt('Informe outro número inteiro:'));
+    const numero3 = Number(prompt('Informe mais um número inteiro:'));
+    let sequencia = [];
+    //PROCESSAMENTO
+    if(numero>numero2 && numero2>numero3) sequencia = [numero, numero2, numero3];
+    else if(numero>numero3 && numero3>numero2) sequencia = [numero, numero3, numero2];
+    else if(numero2>numero && numero>numero3) sequencia = [numero2, numero, numero3];
+    else if(numero2>numero3 && numero3>numero) sequencia = [numero2, numero3, numero];
+    else if(numero3>numero && numero>numero2) sequencia = [numero2, numero, numero3];
+    else if(numero3>numero2 && numero2>numero) sequencia = [numero3, numero2, numero];
+    else if(numero == numero2 && numero2 == numero3) sequencia = [numero, numero2, numero3];
+    else {alert('Inválido!!')};
+    alert(sequencia.join(" - "));
+    //SAÍDA
+
+</script>

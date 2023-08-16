@@ -1,0 +1,57 @@
+<script>
+    //Problema: Loja de veículos
+    //Crie os seguintes arrays:
+    // let carrosSUV = ["Tiggo", "Sportage", "Tucson", "EcoSport"];
+    // let cassosSedan = ["Civic", "Corolla", "Arizzo", "Fusion"];
+    // let carrosHatch = ["308", "Focus", "i30"];
+    
+    //Peça para o usuário informar mais três veículos para serem inseridos na lista. Para inserir na lista correta, peça também para o usuário identificar o tipo de veículo que deseja inserir, se é SUV, Sedan ou Hatch.
+
+    //Apresente a lista final de cada tipo de veículo.
+
+    //ENTRADA
+    const carro = prompt(`Informe um veículo para adicionar a nova lista`);
+    const identif = Number(prompt(`Informe o tipo do carro (SUV-1) (SEDAN-2) (HATCH-3)`));
+    const carro2 = prompt(`Informe um veículo para adicionar a nova lista`);
+    const identif2 = Number(prompt(`Informe o tipo do carro (SUV-1) (SEDAN-2) (HATCH-3)`));
+    const carro3 = prompt(`Informe um veículo para adicionar a nova lista`);
+    const identif3 = Number(prompt(`Informe o tipo do carro (SUV-1) (SEDAN-2) (HATCH-3)`));
+
+
+
+    //PROCESSAMENTO
+    let carrosSUV = ["Tiggo", "Sportage", "Tucson", "EcoSport"];
+    let carrosSedan = ["Civic", "Corolla", "Arizzo", "Fusion"];
+    let carrosHatch = ["308", "Focus", "i30"];
+
+    switch (identif) {
+        case 1: carrosSUV.push(carro)
+            break;
+        case 2 : carrosSedan.push(carro)
+            break;
+        case 3 : carrosHatch.push(carro)
+            break;
+    }
+    switch (identif2) {
+        case 1: carrosSUV.push(carro2)
+            break;
+        case 2 : carrosSedan.push(carro2)
+            break;
+        case 3 : carrosHatch.push(carro2)
+            break;
+    }
+    switch (identif3) {
+        case 1: carrosSUV.push(carro3)
+            break;
+        case 2 : carrosSedan.push(carro3)
+            break;
+        case 3 : carrosHatch.push(carro3)
+            break;
+    }
+    alert(`As listas são:\n SUVs: ${carrosSUV}\n Sedans: ${carrosSedan}\n Hatchs: ${carrosHatch}.`);
+
+   
+
+    //SAÍDA
+
+</script>
